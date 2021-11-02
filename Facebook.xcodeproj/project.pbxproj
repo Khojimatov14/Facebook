@@ -14,6 +14,14 @@
 		E484ABFD2730143600110584 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E484ABFC2730143600110584 /* Assets.xcassets */; };
 		E484AC002730143600110584 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E484ABFF2730143600110584 /* Preview Assets.xcassets */; };
 		E484AC032730143600110584 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E484AC012730143600110584 /* LaunchScreen.storyboard */; };
+		E484AC0D2730147B00110584 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484AC0C2730147B00110584 /* Home.swift */; };
+		E484AC122730298D00110584 /* RoomItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484AC112730298D00110584 /* RoomItem.swift */; };
+		E484AC1427302CAA00110584 /* StoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484AC1327302CAA00110584 /* StoryItem.swift */; };
+		E484AC16273036BD00110584 /* PostItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484AC15273036BD00110584 /* PostItem.swift */; };
+		E484AC18273169F000110584 /* CreateRoom.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484AC17273169F000110584 /* CreateRoom.swift */; };
+		E484AC1A27316D3000110584 /* CreateStrory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484AC1927316D3000110584 /* CreateStrory.swift */; };
+		E484AC1C273176A900110584 /* ProfileItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484AC1B273176A900110584 /* ProfileItem.swift */; };
+		E484AC1E27317DE600110584 /* PostItem2image.swift in Sources */ = {isa = PBXBuildFile; fileRef = E484AC1D27317DE600110584 /* PostItem2image.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +34,14 @@
 		E484ABFF2730143600110584 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E484AC022730143600110584 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E484AC042730143600110584 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E484AC0C2730147B00110584 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		E484AC112730298D00110584 /* RoomItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomItem.swift; sourceTree = "<group>"; };
+		E484AC1327302CAA00110584 /* StoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryItem.swift; sourceTree = "<group>"; };
+		E484AC15273036BD00110584 /* PostItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem.swift; sourceTree = "<group>"; };
+		E484AC17273169F000110584 /* CreateRoom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateRoom.swift; sourceTree = "<group>"; };
+		E484AC1927316D3000110584 /* CreateStrory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateStrory.swift; sourceTree = "<group>"; };
+		E484AC1B273176A900110584 /* ProfileItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileItem.swift; sourceTree = "<group>"; };
+		E484AC1D27317DE600110584 /* PostItem2image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostItem2image.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +74,12 @@
 		E484ABF22730143600110584 /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				E484AC0E2730294F00110584 /* Cells */,
+				E484AC0B2730146C00110584 /* Screens */,
 				E484ABF32730143600110584 /* AppDelegate.swift */,
 				E484ABF52730143600110584 /* SceneDelegate.swift */,
-				E484ABF72730143600110584 /* ContentView.swift */,
-				E484ABFC2730143600110584 /* Assets.xcassets */,
-				E484AC012730143600110584 /* LaunchScreen.storyboard */,
 				E484AC042730143600110584 /* Info.plist */,
-				E484ABF92730143600110584 /* Facebook.xcdatamodeld */,
+				E484AC0A2730144400110584 /* AppBox */,
 				E484ABFE2730143600110584 /* Preview Content */,
 			);
 			path = Facebook;
@@ -76,6 +91,39 @@
 				E484ABFF2730143600110584 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E484AC0A2730144400110584 /* AppBox */ = {
+			isa = PBXGroup;
+			children = (
+				E484ABF92730143600110584 /* Facebook.xcdatamodeld */,
+				E484AC012730143600110584 /* LaunchScreen.storyboard */,
+				E484ABFC2730143600110584 /* Assets.xcassets */,
+				E484ABF72730143600110584 /* ContentView.swift */,
+			);
+			path = AppBox;
+			sourceTree = "<group>";
+		};
+		E484AC0B2730146C00110584 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				E484AC0C2730147B00110584 /* Home.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		E484AC0E2730294F00110584 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E484AC112730298D00110584 /* RoomItem.swift */,
+				E484AC1327302CAA00110584 /* StoryItem.swift */,
+				E484AC15273036BD00110584 /* PostItem.swift */,
+				E484AC17273169F000110584 /* CreateRoom.swift */,
+				E484AC1927316D3000110584 /* CreateStrory.swift */,
+				E484AC1B273176A900110584 /* ProfileItem.swift */,
+				E484AC1D27317DE600110584 /* PostItem2image.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,9 +197,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E484ABF42730143600110584 /* AppDelegate.swift in Sources */,
+				E484AC1C273176A900110584 /* ProfileItem.swift in Sources */,
 				E484ABF62730143600110584 /* SceneDelegate.swift in Sources */,
+				E484AC1A27316D3000110584 /* CreateStrory.swift in Sources */,
+				E484AC0D2730147B00110584 /* Home.swift in Sources */,
+				E484AC1E27317DE600110584 /* PostItem2image.swift in Sources */,
+				E484AC1427302CAA00110584 /* StoryItem.swift in Sources */,
 				E484ABF82730143600110584 /* ContentView.swift in Sources */,
+				E484AC18273169F000110584 /* CreateRoom.swift in Sources */,
 				E484ABFB2730143600110584 /* Facebook.xcdatamodeld in Sources */,
+				E484AC16273036BD00110584 /* PostItem.swift in Sources */,
+				E484AC122730298D00110584 /* RoomItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

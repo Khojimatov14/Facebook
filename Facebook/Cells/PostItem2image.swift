@@ -59,7 +59,7 @@ struct PostItem2image: View {
                         .foregroundColor(.red)
                         .font(.system(size: 25).weight(.bold))
                         .padding(.leading, -12)
-                    Text("!? IT sohada firilansermisiz?")
+                    Text("IT sohada firilansermisiz?")
                         Spacer()
                 }
                 .padding(.top, 15)
